@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
 
 *{
     padding: 0;
@@ -7,22 +9,82 @@
 
 body{
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
+    font-family: 'Rubik Dirt', cursive;
 }
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
 
 .background{
     flex: 1;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
     
-}
-
-img{
-    width: 100%;
-    height: 100%;
 }
 
 .container{
     flex: 2;
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
+.instructions, .footer{
+    background-image: linear-gradient(to top, gray, rgb(107, 107, 163));
+    padding: 3rem;
+    flex: 1;
+
+}
+
+.instructions{
+    font-size: 28px;
+    overflow: hidden;
+
+}
+
+.signUp{
+    padding: 2rem 3rem;
+}
+
+
+.info{
+    display: inline-block;
+    margin-right: 5rem;
+    margin-bottom: 28px;
+}
+.inputBox{
+    /* margin-bottom: 2rem; */
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    width: 350px;
+}
+
+.labelName{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.mission{
+    padding-right: 8rem;
+    margin-bottom: 26px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    
+}
+
+/* FOOTER */
+.btn{
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
 

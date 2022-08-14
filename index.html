@@ -9,51 +9,55 @@
 </head>
 <body>
     <div class="background">
-        <img src="./images/bg.jpg" alt="Friends - background image">
+        <!-- <img src="./images/bg.jpg" alt="Friends - background image"> -->
     </div>
     <main class="container">
         <section class="instructions">
-            <p class="mission">This is a platform where you can store your media and decide who has access to it. Easy to set up. Just sign in, upload and eat a kota</p>
+            <p class="mission">This is a platform where you can store your media and decide who has access to it. Easy to set up. Just sign in, upload and eat a kota.</p>
             <p class="persuade">Go for it</p>
         </section>
 
         <section class="signUp">
             <h3 class="form-heading">Let's do this</h3>
-            <form action="#" method="push">
+            <form action="#" method="post" class="form">
                 <div class="initials">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" placeholder="Neeve" required>
-                </div>
+                    <div class="info">
+                        <label for="firstName" class="labelName">FIRST NAME</label>
+                    <input type="text" id="firstName" placeholder="Neeve"  class="inputBox" required>
+                    </div>
 
-                <div class="initials">
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" placeholder="Ann" required>
-                </div>
+                    <div class="info">
+                        <label for="lastName" class="labelName">LAST NAME</label>
+                        <input type="text" id="lastName" placeholder="Ann" class="inputBox"  required>
+                    </div>
 
-                <div class="initials">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" placeholder="someone@mymail" required>
-                </div>
+                    <div class="info">
+                        <label for="email" class="labelName">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="someone@mymail" required class="inputBox" >
+                    </div>
 
-                <div class="initials">
-                    <label for="number">PHONE NUMBER</label>
-                    <input type="number" id="number" placeholder="1234567890">
-                </div>
+                    <div class="info">
+                        <label for="phone_number" class="labelName">PHONE NUMBER</label>
+                        <input type="tel" max='10' id="number" name="phone-number" placeholder="0712345678" autocomplete="off" class="inputBox" required>
+                    </div>
 
-                <div class="initials">
-                    <label for="password">PASSWORD</label>
-                    <input type="text" id="password">
+                    <div class="info">
+                        <label for="password" class="labelName">PASSWORD</label>
+                        <input type="password" id="password" name="password" class="inputBox" required >
+                    </div>
+                    
+                    <div class="info">
+                        <label for="password" class="labelName">CONFIRM PASSWORD</label>
+                         <input type="password" id="password" name="password" class="inputBox" >
+                    </div>
                 </div>
-                
-                <div class="initials">
-                    <label for="password">CONFIRM PASSWORD</label>
-                    <input type="text" id="password" >
-                </div>
+                <!-- <div class="initials"></div>
+                <div class="initials"></div> -->
             </form>
         </section>
 
         <section class="footer">
-            <button type="button" class="btn">Create Account</button>
+            <button type="submit" class="btn">Create Account</button>
             <p class="login">Already have an account? <a href="#">Log in</a></p>
         </section>
     </main>
