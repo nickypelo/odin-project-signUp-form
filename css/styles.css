@@ -17,15 +17,25 @@ h3{
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-decoration: underline;
+    letter-spacing: 2px;
+    color: rgb(31, 27, 27);
 }
 
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
 
+a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
 
 .background{
     flex: 1;
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
-    
+    text-align: center;
 }
 
 .container{
@@ -45,7 +55,12 @@ h3{
 
 .instructions{
     font-size: 28px;
+    padding: 6rem 3rem 12px 3rem;
 
+}
+
+.footer{
+    padding-top: 2rem;
 }
 
 .signUp{
@@ -58,11 +73,29 @@ h3{
     margin-right: 5rem;
     margin-bottom: 28px;
 }
+
 .inputBox{
     /* margin-bottom: 2rem; */
     padding: 8px 12px;
     font-size: 1.2rem;
     width: 350px;
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
+}
+
+.inputBox:valid{
+    border: 2px green dotted;
+}
+
+.inputBox:focus{
+    border: 2px solid #e5e7eb;
+}
+
+.cite{
+    color: aqua;
+    display:inline-block;
+    margin: 14px;
+    padding: 10px;
 }
 
 .labelName{
@@ -75,16 +108,39 @@ h3{
     margin-bottom: 26px;
     line-height: 1.5;
     letter-spacing: 3px;
-    padding-top: 2rem;
     
 }
 
 /* FOOTER */
 .btn{
-    padding: 12px;
-    font-size: 16px;
+    padding: 12px 28px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 30px;
     border-radius: 12px;
+    background-color: #596D48;
+    color: white;
+    border: 1px #596D48 solid;
+    display: block;
 }
 
+.btn:hover{
+    background-color: rgb(135, 155, 117);
+    font-size: 20px;
+}
+
+.login{
+    letter-spacing: 1.3px;
+    font-size: 17px;
+}
+
+
+/* MEDIA */
+@media screen and (max-width: 600px){
+    .background{
+        display: none;
+    }
+    .mission{
+        padding-right: 3rem;
+    }
+}

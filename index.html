@@ -9,6 +9,8 @@
 </head>
 <body>
     <div class="background">
+        <p class="cite">Photo by <a href="https://unsplash.com/es/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
         <!-- <img src="./images/bg.jpg" alt="Friends - background image"> -->
     </div>
     <main class="container">
@@ -18,49 +20,48 @@
         </section>
 
         <section class="signUp">
-            <h3 class="form-heading">Let's do this</h3>
-            <form action="#" method="post" class="form">
+            <h3 class="form-heading">Register</h3>
+            <form action="#" method="post" id="form">
                 <div class="initials">
                     <div class="info">
                         <label for="firstName" class="labelName">FIRST NAME</label>
-                    <input type="text" id="firstName" placeholder="Neeve"  class="inputBox" required>
+                    <input type="text" id="firstName" placeholder="Neeve" autocomplete="off" class="inputBox" required>
                     </div>
 
                     <div class="info">
                         <label for="lastName" class="labelName">LAST NAME</label>
-                        <input type="text" id="lastName" placeholder="Ann" class="inputBox"  required>
+                        <input type="text" id="lastName" placeholder="Ann" autocomplete="off" class="inputBox"  required>
                     </div>
 
                     <div class="info">
                         <label for="email" class="labelName">EMAIL</label>
-                        <input type="email" name="email" id="email" placeholder="someone@mymail" required class="inputBox" >
+                        <input type="email" name="email" id="email" placeholder="someone@mymail.com" autocomplete="off" required class="inputBox" >
                     </div>
 
                     <div class="info">
-                        <label for="phone_number" class="labelName">PHONE NUMBER</label>
-                        <input type="tel" max='10' id="number" name="phone-number" placeholder="0712345678" autocomplete="off" class="inputBox" required>
+                        <label for="phone-number" class="labelName">PHONE NUMBER</label>
+                        <input type="tel" max='10' id="phone-number" name="phone-number" placeholder="0712345678" autocomplete="off" class="inputBox" required>
                     </div>
 
                     <div class="info">
                         <label for="password" class="labelName">PASSWORD</label>
-                        <input type="password" id="password" name="password" class="inputBox" required >
+                        <input type="password" id="password" name="password" autocomplete="off" class="inputBox" required >
                     </div>
                     
                     <div class="info">
-                        <label for="password" class="labelName">CONFIRM PASSWORD</label>
-                         <input type="password" id="password" name="password" class="inputBox" >
+                        <label for="ConfirmPassword" class="labelName">CONFIRM PASSWORD</label>
+                         <input type="password" id="confirmPassword" name="password" autocomplete="off" class="inputBox" required >
                     </div>
                 </div>
-                <!-- <div class="initials"></div>
-                <div class="initials"></div> -->
             </form>
         </section>
 
         <section class="footer">
-            <button type="submit" class="btn">Create Account</button>
+            <input form='form' class="btn" type='submit' value="Create Account">
             <p class="login">Already have an account? <a href="#">Log in</a></p>
         </section>
     </main>
     
+    <script src="script.js"></script>
 </body>
 </html>
