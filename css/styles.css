@@ -31,11 +31,21 @@ a:hover{
     text-decoration: underline;
 }
 
+span{
+    color: red;
+    display: block;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
 .background{
     flex: 1;
     background-image: url('../images/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
-    text-align: center;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
@@ -74,6 +84,10 @@ a:hover{
     margin-bottom: 28px;
 }
 
+.info:nth-child(5), .info:nth-child(6){
+    margin-bottom: 15px;
+}
+
 .inputBox{
     /* margin-bottom: 2rem; */
     padding: 8px 12px;
@@ -83,13 +97,6 @@ a:hover{
     border-radius: 8px;
 }
 
-.inputBox:valid{
-    border: 2px green dotted;
-}
-
-.inputBox:focus{
-    border: 2px solid #e5e7eb;
-}
 
 .cite{
     color: aqua;
