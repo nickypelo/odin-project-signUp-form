@@ -97,6 +97,12 @@ span{
     border-radius: 8px;
 }
 
+.inputBox:focus{
+    border: 2px solid cornflowerblue;
+    box-shadow: 0 0 12px cornflowerblue;
+    outline: none;
+}
+
 
 .cite{
     color: aqua;
