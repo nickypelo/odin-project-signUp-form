@@ -7,23 +7,24 @@ const input = document.querySelectorAll('.inputBox');
 
 
 create.addEventListener('click', ()=>{
-    if(confirmPassword !== password){
+    if(confirmPassword.value === password.value){
+        password.setAttribute('style', 'border: 2px green dotted;');
+        confirmPassword.setAttribute('style', 'border: 2px green dotted;');
+        
+    }
+    else if((confirmPassword.value !== password)){
         errorMsg.textContent = "**Passwords do not match";
         errorMsg2.textContent = "**Passwords do not match";
         confirmPassword.setAttribute('style', 'border: 2px red dotted;');
         password.setAttribute('style', 'border: 2px red dotted;');
-    }
-    else{
-        password.setAttribute('style', 'border: 2px green dotted;');
-        confirmPassword.setAttribute('style', 'border: 2px green dotted;');
-
+      
     }
    
 })
 
-input.forEach((reset) =>{
-    reset.addEventListener('click',()=>{
-        errorMsg.textContent = "**Passwords do not match";
-        errorMsg2.textContent = "**Passwords do not match";
-    })
-})
+// input.forEach((reset) =>{
+//     reset.addEventListener('mouse',()=>{
+//         errorMsg.textContent = "";
+//         errorMsg2.textContent = "";
+//     })
+// })
